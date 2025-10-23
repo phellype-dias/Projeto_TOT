@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+:root{
+    --corCinza : #ccc;
+    --corBranca : #fff;
+    --corPreta: #111;
+    --corHoverWord: #0978b2; 
+    --valorMax: 100%;
+    --valor85: 85%;
+    --fontIcons: 1.7em;
+    --fontDefault: 1em;
+    --font1-2: 1.2em;
+    --body-color: #fff;
+}
+body{
+    background-color: var(--body-color);
+}
+
+.header-template-one{
+    position: relative;
+    width: var(--valorMax);
+    height: var(--valorMax);
+
+    & .navBar-header-one{
+        position: sticky;
+        top: 0;
+        z-index: 5;
+        background-color: var(--corBranca);
+        width: var(--valorMax);
+        height: 8vh;
+        min-height: 70px;
+        display: flex;
+        justify-content: center;
+        padding: 0 5vw;
+        font-family: 'Poppins', sans-serif;
+
+        & .div-logo-head a{
+            height: 100%;
+
+            & img{
+                max-height: 100%;
+                max-width: 100%;
+            }
+        }
+
+        .header-container{
+            height: var(--valorMax);
+            width: var(--valorMax);
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+
+            & .div-links{
+            display: flex;
+            justify-content: center;
+            width: 80%;
+
+                & ul{
+                    list-style: none;
+                    gap: 1vw;
+                    display: flex;
+                    
+                    & li{
+                        display: flex;
+
+                        & a{
+                            font-family: 'Segoe UI';
+                            padding: 0 1vw;
+                            height: var(--valorMax);
+                            display: flex;
+                            align-items: center;
+                            font-size: 0.9em;
+                            font-weight: 500;
+                            text-decoration: none;
+                            color: var(--corPreta);
+                            cursor: pointer;
+                            transition: color .4s ease;
+                        }
+
+                    }
+                    & li:hover a{
+                        transition: color .4s ease;
+                        color: var(--corHoverWord);
+                    }
+                }
+            }
+
+            & .agendamento{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                & button{
+                    padding: 10px;
+                    color: var(--corBranca);
+                    border: 1px black solid;
+                    border-radius: 18px;
+                    background-color: var(--corHoverWord);
+                    transition: border 0.7s ease;
+                }
+
+                & button:hover{
+                    cursor: pointer;
+                    border: 1px white solid;
+                    transition: border 0.7s ease;
+                }
+            }
+        }
+    }
+}

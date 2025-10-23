@@ -1,0 +1,126 @@
+html {
+      scroll-behavior: smooth;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI';
+}
+
+.banner{ 
+    min-height: 90vh;
+    height: 90vh;
+    width: 100%;
+    position: relative;
+
+    & img{
+
+        width: 100%;
+        height: 100%;
+        object-fit: fill;
+    }
+
+    & .content-banner{
+        color: white;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        display: flex;
+        align-items: center;
+
+        & .text-banner{
+            width: 80vh;
+            margin-left: 10%;
+
+            & h1{
+                font-size: 2.2em;
+                font-weight: 600;
+            }
+            & p {
+                font-size: 1.1em;
+            }
+            & a {
+                margin-top: 2vh;
+                display: inline-block;
+                background-color: #0978b2;
+                color: #fff;
+                font-family: 'Poppins', sans-serif;
+                font-weight: 500;
+                font-size: .8rem;
+                text-decoration: none;
+                padding: 12px 18px;
+                border-radius: 50px;
+                transition: background-color 0.3s ease, transform 0.2s ease;
+            }
+            & a:hover { 
+                background-color: #046092
+            }
+        }
+    }
+}
+
+
+.anchor-container{
+    width: 100%;
+    margin: 3vh 0;
+    display: flex;
+    justify-content: center;
+}
+.form-container {
+      background-color: #0f0f0f;
+      color: white;
+      width: 75%;
+      padding: 40px;
+      border-radius: 15px;
+      box-shadow: 0 0 20px rgba(0,0,0,0.2);
+    }
+
+    & h2 {
+      text-align: center;
+      font-size: 1.8rem;
+      margin-bottom: 30px;
+    }
+
+    & .form-input {
+      margin-bottom: 20px;
+
+      & input, textarea{
+        width: 100%;
+        padding: 14px;
+        border: none;
+        border-radius: 6px;
+        font-size: 0.8rem;
+        outline: none;
+      }
+      & textarea{
+        resize: none;
+      }
+      & input::placeholder , textarea::placeholder{
+        color: black;
+      }
+      & input:focus, textarea:focus{
+        background-color: rgb(235, 235, 235);
+      }
+    }
+
+    button {
+      background-color: #0978b2;
+      color: white;
+      border: none;
+      padding: 12px 30px;
+      font-size: 1rem;
+      border-radius: 6px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+      display: block;
+      margin: 0 auto;
+    }
+
+    button:hover {
+        cursor: pointer;
+        background-color: #046092;
+    }
+
+

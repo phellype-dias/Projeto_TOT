@@ -1,0 +1,170 @@
+:root{
+    --corCinza : #ccc;
+    --corBranca : #fff;
+    --footer-Color: #000000;
+    --valorMax: 100%;
+    --valor85: 85%;
+    --font0-8: .8em;
+    --font0-9: .9em;
+    --font1-2: 1.2em;
+    --font1-3: 1.3em;
+}
+
+.container-footer{
+    display: flex;
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    font-family: 'Poppins', sans-serif;
+    
+    & h4 {
+        font-size: var(--font1-3);
+    }
+}
+
+.flex-25{
+    flex: 1 1 25%;
+    align-items: end;
+
+    & li {
+        display: flex;
+        justify-content: end;
+
+        & a{
+            text-decoration: underline !important;
+        }
+    }
+}
+.flex-35{
+    flex: 1 1 35%;
+}
+.flex-40{
+    flex: 1 1 40%;
+}
+.padding-default{
+    padding: 0 1vw !important;
+}
+
+.div-content{
+    flex: 1;
+    padding: 0 1vw;
+}
+
+.div-contatos{
+    display: flex;
+    flex-direction: column;
+    a{
+        color: inherit;
+        text-decoration: underline !important;
+    }
+}
+.flex-25, .flex-40{
+
+    & h4 {
+        font-size: 1em;
+    }
+
+}
+.footer-top{
+    background-color: var(--footer-Color);
+    width: var(--valorMax);
+    padding: 7.5vh 0;
+
+    & h4{
+        color: var(--corBranca);
+    }
+
+    & .container-footer{
+
+        & .collun-content{
+            padding: 0 3vw 0 1vw;
+            display: flex;
+            flex-direction: column;
+            gap: 2vh;
+
+            & ul{
+                list-style: none;
+                display: flex;
+                flex-direction: column;
+                gap: 1vh;
+                margin-bottom: 2vh;
+
+                & li {
+
+                    cursor: pointer;
+                    
+                    & a{
+                        display: flex;
+                        flex-direction: row;
+                        font-size: var(--font0-8);
+                        color: var(--corBranca);
+                        text-decoration: none;
+
+                    }
+                }
+            }
+        }
+
+        & .container-inscription{
+            input {
+                width: 100%;
+                padding: 12px;
+                border: none;
+                border-radius: 6px;
+                margin-bottom: 15px;
+                font-size: 0.95rem;
+            }
+
+            & input:focus {
+                outline: none;
+            }
+
+            & button {
+                width: 100%;
+                background-color: #0978b2;
+                color: white;
+                border: none;
+                padding: 12px;
+                font-size: 1rem;
+                border-radius: 6px;
+                cursor: pointer;
+                transition: background-color 0.3s ease;
+            }
+            & button:hover { 
+                background-color: #046092
+            }
+
+        }
+    }
+}
+
+.footer-bottom{
+    background-color: var(--footer-Color);
+    width: var(--valorMax);
+    padding: 2vh 0;
+
+    & .container-footer{
+        display: flex;
+        flex-direction: column;
+
+        & hr{
+            border: none;
+            background-color: rgba(163, 163, 163, 0.6) ;
+            height: 1px;
+            margin-bottom: 2vh;
+        }
+        
+        & .rights-reserved{ 
+            display: flex;
+            justify-content: center;
+            padding-bottom: 4vh;
+
+            & label{
+                line-height: 24px;
+                color: var(--corBranca);
+                font-size: var(--font0-9);
+            }   
+        }
+    }
+}
