@@ -14,5 +14,5 @@ function loadHTML(elementId, filePath) {
 }
 
 // Carregando as partes do HTML da pasta 'partials'
-loadHTML("header", "./html/partials/_header.html");
-loadHTML("footer", "./html/partials/_footer.html");
+loadHTML("header", "./html/partials/header.html");
+loadHTML("footer", "./html/partials/footer.html");
